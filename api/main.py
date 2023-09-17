@@ -46,7 +46,7 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": True, # Redirect a una pagina?
+        "redirect": False, # Redirect a una pagina?
         "page": "https://google.com"
     },
 }
